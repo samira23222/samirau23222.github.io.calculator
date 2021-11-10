@@ -1,0 +1,106 @@
+
+
+html{
+  background-image: url(Sam.jpeg);
+  background-size: cover;
+  background-position: center center center;
+  background-repeat:no-repeat;
+}
+body{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+.calculator input,
+.calc-button   {
+  font-family: fantasy
+  
+ 
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .calculator .formstyle  {
+    max-width: 500px;
+    margin: 0 auto;
+   border: 20px solid transparent;
+   border-image: url(yellow2.png) 30% round;
+   
+    border-radius: 5px;
+    border-image-repeat: repeat;
+   background-color: mistyrose;
+
+    
+  }
+
+  .calc-button  {
+    background: pink; /* light background with opacity 50% */
+    border: 1px solid #111; /* black border */
+    padding: 20px;
+    color: #EEE; /* white text */
+    border-radius: 80px; /* rounded corners */
+    font-size: 22px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+  }
+
+  .calculator input   {
+  
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 23px;
+    width: 100%;
+    border-bottom: 30px solid white;
+      border-image: url(final.gif) 30% round;
+    color: #333;
+   text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+    margin-right: 50px;
+    padding-left: 50px;
+    
+  }
+
+
+  .calculator-buttons {
+   
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .calculator-buttons {
+    grid-gap: 15px;
+  }
+
+.is-zero,
+.is-clear   {
+  grid-column: span 3;
+}
+
+/* go blue */
+.is-clear   {
+  background: lightblue;
+}
+
+.is-equals {
+    background: plum;
+  }
+
+.textview{
+    width: 400px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: plum;
+    font-family: sans-serif;
+    }	
+        
